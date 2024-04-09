@@ -1,0 +1,11 @@
+schemaVersion: 2.1.0
+metadata:
+  name: fedora-devenv
+attributes:
+  controller.devfile.io/storage-type: ephemeral
+components:
+  - name: dotfiles
+    container:
+      image: "ghcr.io/gbraad-devenv/fedora/dotfiles:39"
+      memoryLimit: 2Gi
+      memoryRequest: 256Mi
